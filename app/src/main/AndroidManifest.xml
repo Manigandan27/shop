@@ -41,7 +41,8 @@
         </activity>
 
 
-
+        <receiver android:name=".Utils.NetConnection"
+            android:enabled="true"/>
 
 
         <activity

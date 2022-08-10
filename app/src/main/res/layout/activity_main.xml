@@ -19,9 +19,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-
-            android:background="@drawable/oval"
 
             android:layout_weight="1">
 
@@ -30,6 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tint="@color/white"
+
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_menu_24" />
 
         </LinearLayout>
@@ -37,9 +36,9 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+
             android:layout_weight="1"
-            android:background="@drawable/oval">
+            >
 
 
             <TextView
@@ -47,10 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="My Project"
-                android:textSize="30dp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+
+                 />
 
         </LinearLayout>
 
@@ -58,9 +55,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
 
-            android:background="@drawable/oval"
+
+
 
             android:layout_weight="1">
 
@@ -69,6 +66,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tint="@color/white"
+
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_logout_24" />
 
         </LinearLayout>
@@ -97,6 +96,8 @@
                 android:orientation="vertical">
 
 
+
+
                 <LinearLayout
 
                     android:layout_width="match_parent"
@@ -122,31 +123,31 @@
                                 android:layout_width="100dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/a_img2" />
+                                android:background="@drawable/a_a80" />
 
                             <LinearLayout
                                 android:layout_width="100dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/a_img5" />
+                                android:background="@drawable/a_a92" />
 
                             <LinearLayout
                                 android:layout_width="100dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/a_img8" />
+                                android:background="@drawable/a_a87" />
 
                             <LinearLayout
                                 android:layout_width="100dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/p_image11" />
+                                android:background="@drawable/a_a96" />
 
                             <LinearLayout
                                 android:layout_width="100dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/p_image12" />
+                                android:background="@drawable/a_a80" />
 
                         </LinearLayout>
 
@@ -159,7 +160,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/p_image7">
+                    android:background="@drawable/b_b77">
 
                 </LinearLayout>
 
@@ -168,40 +169,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/p_image1" />
+                    android:background="@drawable/b_b78" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/p_image2" />
+                    android:background="@drawable/b_b80" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/p_image4" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/p_image3" />
+                    android:background="@drawable/b_b85" />
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/p_image5" />
+                    android:background="@drawable/b_b86" />
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/p_image6" />
+                    android:background="@drawable/b_b80" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/b_b77" />
 
 
             </LinearLayout>
@@ -220,9 +221,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
 
-            android:background="@drawable/oval"
+
+
 
             android:layout_weight="1">
 
@@ -231,6 +232,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tint="@color/white"
+
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_home_24" />
 
         </LinearLayout>
@@ -239,10 +242,10 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+
             android:layout_weight="1"
 
-            android:background="@drawable/oval"
+
 
             android:backgroundTint="@color/white">
 
@@ -250,6 +253,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tint="@color/white"
+
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_notifications_24" />
 
         </LinearLayout>
@@ -257,10 +262,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+
             android:layout_weight="1"
 
-            android:background="@drawable/oval"
 
             android:backgroundTint="@color/white">
 
@@ -268,6 +272,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tint="@color/white"
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_shopping_cart_24" />
 
         </LinearLayout>
@@ -275,10 +280,10 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+
             android:layout_weight="1"
 
-            android:background="@drawable/oval"
+
 
             android:backgroundTint="@color/white">
 
@@ -288,6 +293,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tint="@color/white"
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_person_24" />
 
         </LinearLayout>

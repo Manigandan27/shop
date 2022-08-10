@@ -12,11 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
-import com.example.shop.NetworkConnection.NetConnection;
-
-import java.sql.Connection;
+import com.example.shop.Utils.NetConnection;
 
 public class Splash extends AppCompatActivity implements NetConnection.ConnectivityReceiverListener {
 
@@ -46,14 +43,25 @@ public class Splash extends AppCompatActivity implements NetConnection.Connectiv
     }
 
         @Override
-
         protected void onResume () {
             super.onResume();
-
             Intent intent = registerReceiver(netConnection, intentfilter);
             netConnection.setConnectivityReceiverListener(this);
-            boolean isConnected = com.example.shop.NetworkConnection.NetConnection.isConnected(this);
+            boolean isConnected = com.example.shop.Utils.NetConnection.isConnected(this);
         }
+        @Override
+        protected void onDestroy(){
+        super.onDestroy();
+        try{
+            unregisterReceiver(netConnection);
+        }
+        catch (IllegalArgumentException ex)
+        {
+            ex.printStackTrace();
+        }
+
+        }
+
 
         @Override
 
@@ -66,8 +74,8 @@ public class Splash extends AppCompatActivity implements NetConnection.Connectiv
             Log.e("internet check", String.valueOf(isConnected));
 
             if(isConnected) {
-                net.setVisibility(View.GONE);
-                noNet.setVisibility(View.VISIBLE);
+                net.setVisibility(View.VISIBLE);
+                noNet.setVisibility(View.GONE);
 
                 Handler handel = new Handler();
                 handel.postDelayed(new Runnable() {
@@ -84,5 +92,6 @@ public class Splash extends AppCompatActivity implements NetConnection.Connectiv
                 noNet.setVisibility(View.VISIBLE);
             }
         }
-
 }
+
+

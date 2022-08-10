@@ -1,4 +1,4 @@
-package com.example.shop.NetworkConnection;
+package com.example.shop.Utils;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
