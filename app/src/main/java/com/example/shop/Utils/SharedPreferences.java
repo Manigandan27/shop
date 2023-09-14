@@ -1,7 +1,7 @@
 package com.example.shop.Utils;
 
 import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.SharedPreference;
 
 
 /**
@@ -51,8 +51,8 @@ public class SharedPreference
     //method to let the user login
     //this method will store the user data in shared preferences
     public void userLogin(GrossUser user) {
-        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreference SharedPreference = mCtx.getSharedPreference(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreference.Editor editor = SharedPreference.edit();
         editor.putInt(KEY_ID, user.getuser_id());
         editor.putString(KEY_FIRST_NAME, user.getfirst_name());
         editor.putString(KEY_LAST_NAME, user.getlast_name());
@@ -77,31 +77,31 @@ public class SharedPreference
 
     //this method will checker whether user is already logged in or not
     public boolean isLoggedIn() {
-        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        return sharedPreferences.getString(KEY_USERNAME, null) != null;
+        SharedPreference SharedPreference = mCtx.getSharedPreference(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return SharedPreference.getString(KEY_USERNAME, null) != null;
     }
 
     //this method will give the logged in user
     public GrossUser getUser() {
-        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreference SharedPreference = mCtx.getSharedPreference(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         return new GrossUser(
-                sharedPreferences.getInt(KEY_ID, -1),
-                sharedPreferences.getString(KEY_FIRST_NAME, null),
-                sharedPreferences.getString(KEY_LAST_NAME, null),
-                sharedPreferences.getString(KEY_NAME, null),
-                sharedPreferences.getString(KEY_EMAIL, null),
-                sharedPreferences.getString(KEY_ROLE_ID, null),
-                sharedPreferences.getString(KEY_DESIGNATION, null),
-                sharedPreferences.getString(KEY_PHONE, null),
-                sharedPreferences.getString(KEY_COMPANY_NAME, null),
-                sharedPreferences.getString(KEY_COMPANY_ID, null),
-                sharedPreferences.getString(KEY_OFICE_ID, null),
-                sharedPreferences.getString(KEY_LOGIN_URL, null),
-                sharedPreferences.getString(KEY_PROFILE, null),
-                sharedPreferences.getString(KEY_INCHARGE_NAME, null),
-                sharedPreferences.getString(KEY_INCHARGE_ID, null),
-                sharedPreferences.getString(KEY_INCHARGE_PHONE, null),
-                sharedPreferences.getString(KEY_EMP_ID, null)
+                SharedPreference.getInt(KEY_ID, -1),
+                SharedPreference.getString(KEY_FIRST_NAME, null),
+                SharedPreference.getString(KEY_LAST_NAME, null),
+                SharedPreference.getString(KEY_NAME, null),
+                SharedPreference.getString(KEY_EMAIL, null),
+                SharedPreference.getString(KEY_ROLE_ID, null),
+                SharedPreference.getString(KEY_DESIGNATION, null),
+                SharedPreference.getString(KEY_PHONE, null),
+                SharedPreference.getString(KEY_COMPANY_NAME, null),
+                SharedPreference.getString(KEY_COMPANY_ID, null),
+                SharedPreference.getString(KEY_OFICE_ID, null),
+                SharedPreference.getString(KEY_LOGIN_URL, null),
+                SharedPreference.getString(KEY_PROFILE, null),
+                SharedPreference.getString(KEY_INCHARGE_NAME, null),
+                SharedPreference.getString(KEY_INCHARGE_ID, null),
+                SharedPreference.getString(KEY_INCHARGE_PHONE, null),
+                SharedPreference.getString(KEY_EMP_ID, null)
 
 
 
@@ -110,15 +110,15 @@ public class SharedPreference
 
 
     public static void deleteAllSharePrefs(){
-        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        sharedPreferences.edit().clear().apply();
+        SharedPreference SharedPreference = mCtx.getSharedPreference(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreference.edit().clear().apply();
     }
 
 
     //this method will logout the user
 //    public void logout() {
-//        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        SharedPreference SharedPreference = mCtx.getSharedPreference(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+//        SharedPreference.Editor editor = SharedPreference.edit();
 //        editor.clear();
 //        editor.apply();
 //        mCtx.startActivity(new Intent(mCtx, Survey_LoginActivity.class));
